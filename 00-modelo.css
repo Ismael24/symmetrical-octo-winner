@@ -1,0 +1,410 @@
+/*
+CSS 
+web o pagina: Estilo de la página championships
+autor:Ismael Paloma Narváez 
+fecha:
+RECORDAR:
+en caso de conflictos se aplica el estilo que se define último,
+o sea al final de este archivo o en la misma pagina html
+
+Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
+
+*/
+
+*{
+		  box-sizing: border-box;
+		  padding: 0;
+		  margin: 0;
+		}
+		
+		.marco {
+		  display: grid;
+		  grid-template-columns: 250px auto;
+		  grid-template-rows: 15% 4% auto 4%;
+		  grid-gap: auto;
+		  width: 100%;
+		  height: 100vh;
+		}
+		
+		.encabezado {
+		  grid-column: 1 / span 2;
+		  grid-row: 1 / span 1;
+		  margin-bottom: auto;
+		  padding-top: 4px;
+		  padding-bottom:4px;
+		  display:flex;
+		  align-items: center;
+		  
+		  
+		}
+		
+		.migas {
+
+		  grid-column: 1 / span 2;
+		  grid-row: 2 / span 1;
+		  color: black;
+		}
+		
+		.lado {
+		
+		  grid-column: 1 / span 1;
+		  grid-row: 3 / span 1;
+		  
+		}
+		
+		.contenido {
+		  width:80%;
+		  margin:0 auto;
+		  grid-column: 2 / span 1;
+		  grid-row: 3 / span 1;
+		  background-color:#0a3765;
+		  overflow:auto;
+		  
+		  
+		  
+		  
+		}
+		a:-webkit-any-link {
+			color: black;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+		
+		.pie {
+		 
+		  grid-column: 1 / span 2;
+		  grid-row: 4 / span 1;
+		  
+		}
+		
+		body {
+			background-color:#eee;
+			margin:0px;
+			font-family: 'Nunito', sans-serif;
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-size:100% 100%;
+			
+			
+		}
+		
+		.encabezado {
+		  overflow: hidden;
+		  background-color: #1d428a;
+		  
+		  
+		  
+		  
+		  
+		}
+
+		.encabezado a {
+		  float: left;
+		  font-size: 20px;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  
+		}
+
+		.dropdown {
+		  float: left;
+		  overflow: hidden;
+		  
+		  
+		  
+		}
+
+		.dropdown .dropbtn {
+		  font-size: 20px;  
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 10px 11px;
+		  background-color: #1d428a;
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		.encabezado a:hover, .dropdown:hover .dropbtn {
+		  background-color: red;
+		  
+		}
+		.barraimg a:hover, .dropdown:hover .dropbtn {
+		  background-color: transparent;
+		  transform: scale(1.2);
+		  
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #1d428a;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  margin-top:10px;
+		  margin-bottom: 10px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		  font-size:13px;
+		  
+		}
+
+		.dropdown-content a:hover {
+		  background-color: #eeeeee;
+		  
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		
+		
+		
+		
+		@media screen and (max-width:750px){
+			/* reparamos el estilo para pantallas estrechas */
+			
+			.encabezado a, .encabezado>div, .dropbtn {
+				width:100%;
+				float: none;
+				display:block;
+			}
+			.encabezado{
+				width:100%;
+				height:120%;
+				float: none;
+				display:block;
+				
+			} 
+			.lado{
+				display:none;
+			
+			}
+		    .dropdown-content a{
+				display:none;
+			}
+			.marco{
+				grid-template-columns: 2px auto;
+			}
+			
+						
+			
+		}
+		
+		@media screen and (max-width:1212px){
+			/* reparamos el estilo para pantallas estrechas */
+			.migas{
+				display:none;
+			}
+			.mininba{
+				margin-left:auto;
+				margin-right:auto;
+				
+			}
+						
+			
+		}
+		h1{
+			margin-top:4%;
+			text-align: center;
+			margin-bottom: 3%;
+			font-family: impact;
+			font-size:50px;
+			color:white;
+			
+		
+		
+		}
+		.barraimg a{
+			padding:0px 0px;
+			margin-left:auto;
+			padding-top:5px;
+			
+		}
+		.subtitulo{
+			font-family: bree serif;
+			margin-left: 10%;
+			font-size:35px;
+			margin-bottom:2%;
+			margin-top:5%;
+			font-size:40px;
+			
+		
+		
+		}
+		
+		p{
+			
+			margin-left: 40px;
+			margin-bottom:0px;
+			font-family: calibri;
+			font-size:25px;
+			color:white;
+		
+		}
+		img.img1 {
+			width:50%;
+			height:auto;
+			object-fit:cover;
+			margin-top:10%;
+			margin-left: 20%;
+			margin-bottom: 2%;
+		}
+		img.img2 {
+			width:60%;
+			height:auto;
+			object-fit:cover;
+			margin-left:20%;
+			
+		}
+		
+		
+		img.img3 {
+			width:60px;
+			height:center;
+			object-fit:cover;
+			
+		}
+		.mininba{
+			margin-left:10px;
+			margin-right:15px;
+			width:70px;
+			
+			
+		}
+		.exit{
+			width:50px;
+			position:absolute;
+			right:50px; top:8px;
+			
+			
+		}
+		.exit:hover{
+			transform: scale(1.2);
+			
+		}
+		.atajo{
+			
+			
+			width:50px;
+			position:absolute;
+			right:230px; bottom:60px;
+			
+		}
+		
+		.vertical-menu {
+			margin-top: 7%;
+			width: 200px; /* Set a width if you like */
+			margin-left:15%;
+			
+			
+		}		
+	
+		.vertical-menu a {
+			background-color: #1d428a; /* Grey background color */
+			color: black; /* Black text color */
+			display: block; /* Make the links appear below each other */
+			text-decoration: none; /* Remove underline from links */
+		}
+
+		.vertical-menu a:hover {
+			background-color: red; /* Dark grey background on mouse-over */
+		}
+		
+		a:hover {
+			color:white;
+			font-size:1.1em;
+			
+		}
+		
+		.barra{
+			margin-left:1.5%;
+		}
+		
+		.nombre{
+			position:fixed;
+			margin-left:70%;
+			font-family: calibri;
+			font-size:17px;
+		}
+		.overlayVideoGeneral {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.87);
+			z-index: 2;
+			
+}
+
+#video {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.pulse {
+  color: white;
+  --hover: #ef8f6e;
+}
+		
+		#nVeces{
+			margin-left:77%;
+		
+		}
+		#this_title{
+			color:black;
+			
+		}
+/*
+
+pseudoclases, asignarles estilos en este orden llamado LVHA:
+   :link — :visited — :hover — :active.
+   
+Más selectores y documentación:
+pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
+pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
+pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
+formularios: https://www.w3schools.com/css/css_form.asp
+posicionamiento: https://www.w3schools.com/css/css_positioning.asp
+selectores: https://www.w3schools.com/cssref/css_selectors.asp
+*/
+
+
+
+
+
